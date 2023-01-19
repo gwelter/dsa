@@ -46,6 +46,10 @@ func gcd_improved(a, b int) int {
 	return gcd_improved(b, a%b)
 }
 
+// Time Complexity: O(log(min(a,b))
+// Auxiliary Space: O(log(min(a,b))
+func least_common_multiple(a, b int) int { return a * b / gcd_improved(a, b) }
+
 func main() {
 	a := 12
 	b := 28
@@ -53,4 +57,6 @@ func main() {
 	fmt.Println("Common divisor beteeen", a, b, "is", gcd_naive(a, b))
 	fmt.Println("Common divisor beteeen", a, b, "is", gcd(a, b))
 	fmt.Println("Common divisor beteeen", a, b, "is", gcd_improved(a, b))
+
+	fmt.Println("Lest Common Multiple beteeen", a, b, "is", least_common_multiple(a, b))
 }

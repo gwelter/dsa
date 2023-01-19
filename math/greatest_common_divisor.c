@@ -44,11 +44,20 @@ int gcd_improved(int a, int b) {
   return gcd_improved(b, a % b);
 }
 
-int main() {
-  int a = 12;
-  int b = 28;
+// Time Complexity: O(log(min(a,b))
+// Auxiliary Space: O(log(min(a,b))
+int least_common_multiple(int a, int b) { return a * b / gcd_improved(a, b); }
 
-  printf("Common divisor beteeen %d and %d is %d\n", a, b, gcd_naive(a, b));
-  printf("Common divisor beteeen %d and %d is %d\n", a, b, gcd(a, b));
-  printf("Common divisor beteeen %d and %d is %d\n", a, b, gcd_improved(a, b));
+int main() {
+  int a = 15;
+  int b = 20;
+
+  printf("Greatest common divisor beteeen %d and %d is %d\n", a, b,
+         gcd_naive(a, b));
+  printf("Greatest common divisor beteeen %d and %d is %d\n", a, b, gcd(a, b));
+  printf("Greatest common divisor beteeen %d and %d is %d\n", a, b,
+         gcd_improved(a, b));
+
+  printf("Least common multiple beteeen %d and %d is %d\n", a, b,
+         least_common_multiple(a, b));
 }
