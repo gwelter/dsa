@@ -12,8 +12,8 @@ The implementations are in Golang and C (extra challenge)
 - [x] Palindrome number
 - [x] Sum of naturals
 - [x] Trailling zeros in factorial
-- [ ] Check for prime
-- [ ] Prime factor
+- [x] Check for prime
+- [x] Prime factor
 - [ ] All divisors of a number
 - [ ] Sieve of Eratosthenes
 - [ ] Computing power
