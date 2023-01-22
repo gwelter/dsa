@@ -14,7 +14,7 @@ The implementations are in Golang and C (extra challenge)
 - [x] Trailling zeros in factorial
 - [x] Check for prime
 - [x] Prime factor
-- [ ] All divisors of a number
+- [x] All divisors of a number
 - [ ] Sieve of Eratosthenes
 - [ ] Computing power
 - [ ] Iterative power
