@@ -15,6 +15,6 @@ func countDigits(n int) int {
 	return digits
 }
 
-func math() {
+func main() {
 	fmt.Println(countDigits(123123))
 }

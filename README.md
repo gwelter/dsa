@@ -16,5 +16,6 @@ The implementations are in Golang and C (extra challenge)
 - [x] Prime factor
 - [x] All divisors of a number
 - [x] Sieve of Eratosthenes
-- [ ] Computing power
-- [ ] Iterative power
+- [x] Computing power
+- [x] Iterative power
+- [x] Reduce to zero
